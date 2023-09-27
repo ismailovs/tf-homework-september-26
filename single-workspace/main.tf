@@ -7,6 +7,19 @@ terraform {
   }
 }
 
+terraform {
+  cloud {
+    organization = "s_tc_1"
+
+    workspaces {
+      name = "tf-homework-september-26"
+    }
+  }
+}
+
+
+
+
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
